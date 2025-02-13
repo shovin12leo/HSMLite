@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hospital Management System</title>
+  <link dynamic-css rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body ng-app="hospitalApp">
+  <nav>
+    <ul>
+      <li><a href="#!/">Home</a></li>
+      <li><a href="#!/register">Register</a></li>
+      <li><a href="#!/appointments">Appointments</a></li>
+      <li><a href="#!/doctors">Doctors</a></li>
+      <li><a href="#!/patients">Patients</a></li>
+    </ul>
+    <div class="top-right">Shovin Michel David SYCS 63 05/02/2025  at 21:00pm</div>
+  </nav>
+  <div class="content">
+    <div ng-view></div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+  <script src="app.js"></script>
+  <script src="directives/dynamicCss.js"></script>
+  <script src="controllers/RegisterController.js"></script>
+  <script src="controllers/AppointmentController.js"></script>
+  <script src="controllers/DoctorsController.js"></script>
+  <script src="controllers/PatientsController.js"></script>
+  <script src="controllers/HomeController.js"></script>
+</body>
+</html>
